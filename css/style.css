@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Overpass:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Overpass:wght@100;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+:root{
+    --height-header:10vh;
+}
+.mt-2rem {
+    margin-top: 2rem;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem;
+}
+
+.m-2rem {
+    margin: 2rem 0;
+}
+
+#header {
+    background-image: linear-gradient(to right, #7F167F, #443ea2);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 75px;
+    align-items: center;
+}
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#nav ul{ 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#nav li,
+#header__logo  {
+    margin:0 3rem;
+    list-style: none;
+}
+#nav li a,
+#header__logo a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #FAF8F1;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav li a:hover {
+    background-color: #FAEAB1;
+    color: #7F167F;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+#showitemadmin,#showlogin,#showlogout{
+    display: none;
+}
+
+#banner1{
+    margin-top: 75px;
+}
+/* Slideshow container */
+.slideshow-container1 {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.fade1 img{
+    height: 60vh;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#content {
+    width: 70%;
+    margin: 1rem auto;
+}
+
+#container {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+#ltd__content {
+    width: 35%;
+}
+.content__ltd__item{
+    margin: 10px 0 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.content__ltd__item__head img,.content__ltd__item__head p{
+    display:inline-flex;
+}
+.content__ltd__item__head td{
+    width: 60%;
+}
+.content__ltd__item__head img,.content__ltd__item__ass img{
+    width: 35px;
+    height: 35px;
+}
+.content__ltd__item p{
+    margin: 0.7rem 0.7rem 0.7rem 0.2rem;
+    font-size: small;
+}
+
+.content__ltd__item,.content__ltd__item tr,.content__ltd__item td{
+    padding: 10px 10px 10px 30px;
+}
+
+.content__xts{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.content__ltd__item__flex{
+
+    border:solid 1px #e6e6e6;
+    
+}
+#rank__content {
+    width: 60%;
+}
+
+#news {
+    margin: 1rem;
+    padding: 10vh;
+}
+
+.news__content{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    margin: 1rem 0;
+    
+}
+.news__img1{
+    margin-right: 1rem;
+    width: 35%;
+}
+.news__img1 img{
+    width: 100%;
+    height: 250px;
+}
+.news__img{
+    margin-right: 1rem;
+    width: 30%;
+}
+.news__img img{
+    width: 100%;
+    height: 130px;
+}
+.news__text{
+    margin-right: 1rem;
+    width: 70%;
+}
+.news__text p{
+    font-size: 18px;
+}
+.news__content2{
+    display: flex;
+    justify-content: space-between;
+}
+.news__content3{
+    background-color: #eeeeee;
+    display: flex;
+    width: calc(50% - 0.5rem);
+}
+.news__content3 .news__text{
+
+    width: 50%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.news__content3:nth-child(1){
+    margin-right: 0.5rem;
+}
+.news__content3:nth-child(2){
+    margin-left: 0.5rem;
+}
+
+.content__chonve {
+    width: 1400px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.content__lstve{
+    margin-left: 25px;
+    width: 100%;
+}
+.content__chonve img{
+    width: 300px;
+    height: 900px;
+}
+
+.content__formmua form{
+    margin-left: auto;
+    margin-right: auto;
+   width: 800px;
+   margin-top: 150px;
+   margin-bottom: 50px;
+}
+
+.content__formmua__form label{
+    font-weight: 550;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+option,select{
+    font-weight: 520;
+}
+h1 ,h2{
+    font-weight: 570;
+    text-align: center;
+}
+
+
+.content__formmua__form button{
+    margin-left: 620px;
+    margin-right: 620px;
+}
+
+
+.content__lichsumua{
+    height: 60rem;
+}
+
+
+/* footer */
+
+#footer{
+    height: 75px;
+    background-image: linear-gradient(to right, #7F167F, #443ea2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer i{
+    color:#eeeeee;
+}
+#footer ul{
+    display: inline-flex;
+    margin: auto;
+}
+#footer li{
+    list-style: none;
+    margin: 0 0.5rem;
+}
+#footer li a{
+    font-size:2rem;
+}
+
+/* filter */
+
+.selectmatch:hover:not(.header){
+    background-color: rgb(218, 218, 218);
+  }
+/* #f4f4f4 */
